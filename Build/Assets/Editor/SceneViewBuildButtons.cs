@@ -16,7 +16,7 @@
 // </copyright>
 //-----------------------------------------------------------------------
 
-namespace OdinSerializer.Utilities.Editor
+namespace Jirdus.Internal.OdinSerializer.Utilities.Editor
 {
     using UnityEngine;
     using UnityEditor;
@@ -29,9 +29,9 @@ namespace OdinSerializer.Utilities.Editor
     {
         private const string MS_BUILD_PATH               = @"..\..\Libraries\MSBuild\15.0\Bin\MSBuild.exe";
         private const string SLN_SOLUTION_PATH           = @"..\..\OdinSerializer.sln";
-        private const string ODIN_SERIALIZER_UNITY_DIR   = @"Assets/Plugins/Sirenix/Odin Serializer/";
-        private const string VERSION_TXT_PATH            = @"Assets/Plugins/Sirenix/Odin Serializer/Version.txt";
-        private const string LICENSE_TXT_PATH            = @"Assets/Plugins/Sirenix/Odin Serializer/License.txt";
+        private const string ODIN_SERIALIZER_UNITY_DIR   = @"Assets/Jirdus/Plugins/Odin Serializer/";
+        private const string VERSION_TXT_PATH            = @"Assets/Jirdus/Plugins/Odin Serializer/Version.txt";
+        private const string LICENSE_TXT_PATH            = @"Assets/Jirdus/Plugins/Odin Serializer/License.txt";
         private const string UNITYPACKAGE_PATH           = @"Assets/Odin Serializer.unitypackage";
 
         private const string BUILD_CONFIG_DEBUG_EDITOR   = "Debug Editor";
@@ -44,14 +44,14 @@ namespace OdinSerializer.Utilities.Editor
             AssetDatabase.StartAssetEditing();
             try
             {
-                Build(BUILD_CONFIG_RELEASE_EDITOR);    //Plugins/Sirenix/Odin Serializer/EditorOnly/OdinSerializer.dll - Editor Only
-                Build(BUILD_CONFIG_RELEASE_JIT);       //Plugins/Sirenix/Odin Serializer/JIT/OdinSerializer.dll        - Standalone and Mono
-                Build(BUILD_CONFIG_RELEASE_AOT);       //Plugins/Sirenix/Odin Serializer/AOT/OdinSerializer.dll        - AOT + IL2CPP
+                Build(BUILD_CONFIG_RELEASE_EDITOR);    //Jirdus/Plugins/Odin Serializer/EditorOnly/Jirdus.Internal.OdinSerializer.dll - Editor Only
+                Build(BUILD_CONFIG_RELEASE_JIT);       //Jirdus/Plugins/Odin Serializer/JIT/Jirdus.Internal.OdinSerializer.dll        - Standalone and Mono
+                Build(BUILD_CONFIG_RELEASE_AOT);       //Jirdus/Plugins/Odin Serializer/AOT/Jirdus.Internal.OdinSerializer.dll        - AOT + IL2CPP
             }
             finally
             {
                 AssetDatabase.StopAssetEditing();
-                Debug.Log("Finished at building EditorOnly/OdinSerializer.dll, AOT/OdinSerializer.dll and JIT/OdinSerializer.dll in release mode.");
+                Debug.Log("Finished at building EditorOnly/Jirdus.Internal.OdinSerializer.dll, AOT/Jirdus.Internal.OdinSerializer.dll and JIT/Jirdus.Internal.OdinSerializer.dll in release mode.");
             }
 
             AssetDatabase.Refresh();
@@ -113,7 +113,7 @@ namespace OdinSerializer.Utilities.Editor
             if (GUI.Button(GUILayoutUtility.GetRect(0, 30), "Compile Debug Build"))
             {
                 Build("Debug Editor");
-                Debug.Log("Finished at building EditorOnly/OdinSerializer.dll in debug mode.");
+                Debug.Log("Finished at building EditorOnly/Jirdus.Internal.OdinSerializer.dll in debug mode.");
             }
 
             GUILayout.Space(4);

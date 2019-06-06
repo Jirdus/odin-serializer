@@ -24,7 +24,7 @@
 #define CAN_EMIT
 #endif
 
-namespace OdinSerializer.Utilities
+namespace Jirdus.Internal.OdinSerializer.Utilities
 {
     using System;
     using System.Reflection;

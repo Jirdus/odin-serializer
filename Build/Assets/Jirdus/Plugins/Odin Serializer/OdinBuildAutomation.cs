@@ -1,16 +1,17 @@
 ﻿#if UNITY_EDITOR
-namespace OdinSerializer.Utilities.Editor
+namespace Jirdus.Internal.OdinSerializer.Utilities.Editor
 {
-    using OdinSerializer.Editor;
+    using Jirdus.Internal.OdinSerializer.Utilities.Editor;
     using UnityEditor;
     using UnityEditor.Build;
     using System.IO;
     using System;
     using System.Collections.Generic;
-    using OdinSerializer.Utilities;
+    using Jirdus.Internal.OdinSerializer.Utilities;
     using System.Reflection;
 #if UNITY_2018_1_OR_NEWER
     using UnityEditor.Build.Reporting;
+    using Jirdus.Internal.OdinSerializer.Editor;
 #endif
 
     public static class OdinBuildAutomation
@@ -34,9 +35,9 @@ namespace OdinSerializer.Utilities.Editor
 
             odinSerializerDir = odinSerializerDir.Substring(unityDataPath.Length).TrimStart('/');
 
-            EditorAssemblyPath    = odinSerializerDir + "/EditorOnly/OdinSerializer.dll";
-            AOTAssemblyPath       = odinSerializerDir + "/AOT/OdinSerializer.dll";
-            JITAssemblyPath       = odinSerializerDir + "/JIT/OdinSerializer.dll";
+            EditorAssemblyPath    = odinSerializerDir + "/EditorOnly/Jirdus.Internal.OdinSerializer.dll";
+            AOTAssemblyPath       = odinSerializerDir + "/AOT/Jirdus.Internal.OdinSerializer.dll";
+            JITAssemblyPath       = odinSerializerDir + "/JIT/Jirdus.Internal.OdinSerializer.dll";
             GenerateAssembliesDir = odinSerializerDir + "/Generated";
 
             if  (!File.Exists(EditorAssemblyPath))  throw new FileNotFoundException("Make sure all release configurations specified in the Visual Studio project are built.", EditorAssemblyPath);

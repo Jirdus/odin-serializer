@@ -16,11 +16,11 @@
 // </copyright>
 //-----------------------------------------------------------------------
 
-using OdinSerializer;
+using Jirdus.Internal.OdinSerializer;
 
 [assembly: RegisterFormatterLocator(typeof(ColorBlockFormatterLocator))]
 
-namespace OdinSerializer
+namespace Jirdus.Internal.OdinSerializer
 {
     using System;
     using System.Reflection;

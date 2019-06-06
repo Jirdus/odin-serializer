@@ -1,4 +1,4 @@
-﻿namespace OdinSerializer
+﻿namespace Jirdus.Internal.OdinSerializer
 {
     using System;
 

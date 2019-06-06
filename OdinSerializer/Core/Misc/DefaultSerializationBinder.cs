@@ -16,9 +16,9 @@
 // </copyright>
 //-----------------------------------------------------------------------
 
-namespace OdinSerializer
+namespace Jirdus.Internal.OdinSerializer
 {
-    using OdinSerializer.Utilities;
+    using Jirdus.Internal.OdinSerializer.Utilities;
     using System;
     using System.Collections.Generic;
     using System.Linq;
@@ -32,8 +32,8 @@ namespace OdinSerializer
     /// <seealso cref="DefaultSerializationBinder" />
     /// <example>
     /// <code>
-    /// [assembly: OdinSerializer.BindTypeNameToType("Namespace.OldTypeName", typeof(Namespace.NewTypeName))]
-    /// //[assembly: OdinSerializer.BindTypeNameToType("Namespace.OldTypeName, OldFullAssemblyName", typeof(Namespace.NewTypeName))]
+    /// [assembly: Jirdus.Internal.OdinSerializer.BindTypeNameToType("Namespace.OldTypeName", typeof(Namespace.NewTypeName))]
+    /// //[assembly: Jirdus.Internal.OdinSerializer.BindTypeNameToType("Namespace.OldTypeName, OldFullAssemblyName", typeof(Namespace.NewTypeName))]
     ///
     /// namespace Namespace
     /// {

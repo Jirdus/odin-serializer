@@ -16,11 +16,11 @@
 // </copyright>
 //-----------------------------------------------------------------------
 
-using OdinSerializer;
+using Jirdus.Internal.OdinSerializer;
 
 [assembly: RegisterFormatter(typeof(GradientAlphaKeyFormatter))]
 
-namespace OdinSerializer
+namespace Jirdus.Internal.OdinSerializer
 {
     using UnityEngine;
 

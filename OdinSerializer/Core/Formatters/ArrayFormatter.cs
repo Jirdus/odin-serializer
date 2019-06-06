@@ -16,7 +16,7 @@
 // </copyright>
 //-----------------------------------------------------------------------
 
-namespace OdinSerializer
+namespace Jirdus.Internal.OdinSerializer
 {
     /// <summary>
     /// Formatter for all non-primitive one-dimensional arrays.

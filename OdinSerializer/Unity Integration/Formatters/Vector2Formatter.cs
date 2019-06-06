@@ -16,11 +16,11 @@
 // </copyright>
 //-----------------------------------------------------------------------
 
-using OdinSerializer;
+using Jirdus.Internal.OdinSerializer;
 
 [assembly: RegisterFormatter(typeof(Vector2Formatter))]
 
-namespace OdinSerializer
+namespace Jirdus.Internal.OdinSerializer
 {
     using UnityEngine;
 

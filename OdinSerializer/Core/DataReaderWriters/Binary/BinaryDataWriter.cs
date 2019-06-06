@@ -16,9 +16,9 @@
 // </copyright>
 //-----------------------------------------------------------------------
 
-namespace OdinSerializer
+namespace Jirdus.Internal.OdinSerializer
 {
-    using OdinSerializer.Utilities.Unsafe;
+    using Jirdus.Internal.OdinSerializer.Utilities.Unsafe;
     using System;
     using System.Collections.Generic;
     using System.IO;

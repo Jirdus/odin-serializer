@@ -16,13 +16,13 @@
 // </copyright>
 //-----------------------------------------------------------------------
 
-using OdinSerializer;
+using Jirdus.Internal.OdinSerializer;
 
 [assembly: RegisterFormatter(typeof(KeyframeFormatter))]
 
-namespace OdinSerializer
+namespace Jirdus.Internal.OdinSerializer
 {
-    using OdinSerializer.Utilities;
+    using Jirdus.Internal.OdinSerializer.Utilities;
     using UnityEngine;
 
     /// <summary>

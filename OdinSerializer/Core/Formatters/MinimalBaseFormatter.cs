@@ -16,7 +16,7 @@
 // </copyright>
 //-----------------------------------------------------------------------
 
-namespace OdinSerializer
+namespace Jirdus.Internal.OdinSerializer
 {
     using System;
     using System.Runtime.Serialization;
@@ -42,7 +42,7 @@ namespace OdinSerializer
         public Type SerializedType { get { return typeof(T); } }
 
         /// <summary>
-        /// Deserializes a value of type <see cref="!:T" /> using a specified <see cref="T:OdinSerializer.IDataReader" />.
+        /// Deserializes a value of type <see cref="!:T" /> using a specified <see cref="T:Jirdus.Internal.OdinSerializer.IDataReader" />.
         /// </summary>
         /// <param name="reader">The reader to use.</param>
         /// <returns>
@@ -66,7 +66,7 @@ namespace OdinSerializer
         }
 
         /// <summary>
-        /// Serializes a value of type <see cref="!:T" /> using a specified <see cref="T:OdinSerializer.IDataWriter" />.
+        /// Serializes a value of type <see cref="!:T" /> using a specified <see cref="T:Jirdus.Internal.OdinSerializer.IDataWriter" />.
         /// </summary>
         /// <param name="value">The value to serialize.</param>
         /// <param name="writer">The writer to use.</param>

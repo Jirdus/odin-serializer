@@ -1,4 +1,4 @@
-﻿namespace OdinSerializer
+﻿namespace Jirdus.Internal.OdinSerializer
 {
     /// <summary>
     /// The policy for which level of logging to do during serialization and deserialization.

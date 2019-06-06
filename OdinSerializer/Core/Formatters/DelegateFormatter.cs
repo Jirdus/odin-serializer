@@ -16,7 +16,7 @@
 // </copyright>
 //-----------------------------------------------------------------------
 
-namespace OdinSerializer
+namespace Jirdus.Internal.OdinSerializer
 {
     using System;
     using System.Linq;
@@ -49,7 +49,7 @@ namespace OdinSerializer
         /// <summary>
         /// Provides the actual implementation for deserializing a value of type <see cref="!:T" />.
         /// </summary>
-        /// <param name="value">The uninitialized value to serialize into. This value will have been created earlier using <see cref="M:OdinSerializer.BaseFormatter`1.GetUninitializedObject" />.</param>
+        /// <param name="value">The uninitialized value to serialize into. This value will have been created earlier using <see cref="M:Jirdus.Internal.OdinSerializer.BaseFormatter`1.GetUninitializedObject" />.</param>
         /// <param name="reader">The reader to deserialize with.</param>
         protected override void DeserializeImplementation(ref T value, IDataReader reader)
         {
@@ -369,7 +369,7 @@ namespace OdinSerializer
 
         /// <summary>
         /// Get an uninitialized object of type <see cref="!:T" />. WARNING: If you override this and return null, the object's ID will not be automatically registered and its OnDeserializing callbacks will not be automatically called, before deserialization begins.
-        /// You will have to call <see cref="M:OdinSerializer.BaseFormatter`1.RegisterReferenceID(`0,OdinSerializer.IDataReader)" /> and <see cref="M:OdinSerializer.BaseFormatter`1.InvokeOnDeserializingCallbacks(`0,OdinSerializer.DeserializationContext)" /> immediately after creating the object yourself during deserialization.
+        /// You will have to call <see cref="M:Jirdus.Internal.OdinSerializer.BaseFormatter`1.RegisterReferenceID(`0,OdinSerializer.IDataReader)" /> and <see cref="M:OdinSerializer.BaseFormatter`1.InvokeOnDeserializingCallbacks(`0,OdinSerializer.DeserializationContext)" /> immediately after creating the object yourself during deserialization.
         /// </summary>
         /// <returns>
         /// An uninitialized object of type <see cref="!:T" />.

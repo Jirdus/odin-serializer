@@ -18,7 +18,7 @@
 
 using System;
 
-namespace OdinSerializer
+namespace Jirdus.Internal.OdinSerializer
 {
     /// <summary>
     /// Defines the configuration during serialization and deserialization. This class is thread-safe.

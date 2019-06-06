@@ -16,11 +16,11 @@
 // </copyright>
 //-----------------------------------------------------------------------
 
-using OdinSerializer;
+using Jirdus.Internal.OdinSerializer;
 
 [assembly: RegisterFormatter(typeof(ListFormatter<>))]
 
-namespace OdinSerializer
+namespace Jirdus.Internal.OdinSerializer
 {
     using System;
     using System.Collections.Generic;

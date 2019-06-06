@@ -18,9 +18,9 @@
 
 #if UNITY_EDITOR
 
-namespace OdinSerializer.Editor
+namespace Jirdus.Internal.OdinSerializer.Editor
 {
-    using OdinSerializer.Utilities;
+    using Jirdus.Internal.OdinSerializer.Utilities;
     using System;
     using System.Collections.Generic;
     using System.IO;

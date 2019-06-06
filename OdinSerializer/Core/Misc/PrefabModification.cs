@@ -15,7 +15,7 @@
 // limitations under the License.
 // </copyright>
 //-----------------------------------------------------------------------
-namespace OdinSerializer
+namespace Jirdus.Internal.OdinSerializer
 {
     using System;
     using System.Collections;

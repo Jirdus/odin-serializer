@@ -16,7 +16,7 @@
 // </copyright>
 //-----------------------------------------------------------------------
 
-namespace OdinSerializer.Utilities
+namespace Jirdus.Internal.OdinSerializer.Utilities
 {
     using System;
     using System.Collections.Generic;

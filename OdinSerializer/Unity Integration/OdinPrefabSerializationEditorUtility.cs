@@ -18,7 +18,7 @@
 
 //#define PREFAB_DEBUG
 #if UNITY_EDITOR
-namespace OdinSerializer
+namespace Jirdus.Internal.OdinSerializer
 {
     using System;
     using System.Reflection;

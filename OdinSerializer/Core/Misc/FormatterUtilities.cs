@@ -16,10 +16,10 @@
 // </copyright>
 //-----------------------------------------------------------------------
 
-namespace OdinSerializer
+namespace Jirdus.Internal.OdinSerializer
 {
     using System.Globalization;
-    using OdinSerializer.Utilities;
+    using Jirdus.Internal.OdinSerializer.Utilities;
     using System;
     using System.Collections.Generic;
     using System.Linq;

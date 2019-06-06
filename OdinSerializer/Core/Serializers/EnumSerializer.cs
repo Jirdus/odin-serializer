@@ -18,7 +18,7 @@
 
 using System.Globalization;
 
-namespace OdinSerializer
+namespace Jirdus.Internal.OdinSerializer
 {
     using System;
 

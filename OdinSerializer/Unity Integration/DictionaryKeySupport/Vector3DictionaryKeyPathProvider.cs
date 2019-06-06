@@ -16,11 +16,11 @@
 // </copyright>
 //-----------------------------------------------------------------------
 
-using OdinSerializer;
+using Jirdus.Internal.OdinSerializer;
 
 [assembly: RegisterDictionaryKeyPathProvider(typeof(Vector3DictionaryKeyPathProvider))]
 
-namespace OdinSerializer
+namespace Jirdus.Internal.OdinSerializer
 {
     using System.Globalization;
     using UnityEngine;

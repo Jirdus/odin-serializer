@@ -18,7 +18,7 @@
 
 //#define PREFAB_DEBUG
 
-namespace OdinSerializer
+namespace Jirdus.Internal.OdinSerializer
 {
     using System.Globalization;
     using System;

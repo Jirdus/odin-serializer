@@ -1,4 +1,4 @@
-﻿namespace OdinSerializer
+﻿namespace Jirdus.Internal.OdinSerializer
 {
     /// <summary>
     /// The policy for handling errors during serialization and deserialization.

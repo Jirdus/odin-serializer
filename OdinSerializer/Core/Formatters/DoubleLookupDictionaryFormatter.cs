@@ -16,13 +16,13 @@
 // </copyright>
 //-----------------------------------------------------------------------
 
-using OdinSerializer;
+using Jirdus.Internal.OdinSerializer;
 
 [assembly: RegisterFormatter(typeof(DoubleLookupDictionaryFormatter<,,>))]
 
-namespace OdinSerializer
+namespace Jirdus.Internal.OdinSerializer
 {
-    using OdinSerializer.Utilities;
+    using Jirdus.Internal.OdinSerializer.Utilities;
     using System;
     using System.Collections.Generic;
 
@@ -105,7 +105,7 @@ namespace OdinSerializer
         /// <summary>
         /// Provides the actual implementation for deserializing a value of type <see cref="!:T" />.
         /// </summary>
-        /// <param name="value">The uninitialized value to serialize into. This value will have been created earlier using <see cref="M:OdinSerializer.BaseFormatter`1.GetUninitializedObject" />.</param>
+        /// <param name="value">The uninitialized value to serialize into. This value will have been created earlier using <see cref="M:Jirdus.Internal.OdinSerializer.BaseFormatter`1.GetUninitializedObject" />.</param>
         /// <param name="reader">The reader to deserialize with.</param>
         protected override void DeserializeImplementation(ref DoubleLookupDictionary<TPrimary, TSecondary, TValue> value, IDataReader reader)
         {

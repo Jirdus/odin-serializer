@@ -15,7 +15,7 @@
 // limitations under the License.
 // </copyright>
 //-----------------------------------------------------------------------
-namespace OdinSerializer.Utilities
+namespace Jirdus.Internal.OdinSerializer.Utilities
 {
     /// <summary>
     /// Determines the type of operator.
